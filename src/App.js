@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import FileUploader from "./FileUploader";
+import {Col, Layout, Row} from "antd";
+import {Content} from "antd/es/layout/layout";
+import {FormComponent} from "./FormComponent";
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Layout>
+            <Content>
+                <Row gutter={16} >
+                    <Col span={12}>
+                        <Content>
+                            <FileUploader/>
+                        </Content>
+                    </Col>
+                    <Col span={12}>
+                        <FormComponent/>
+                    </Col>
+                </Row>
+            </Content>
+        </Layout>
     </div>
   );
 }
