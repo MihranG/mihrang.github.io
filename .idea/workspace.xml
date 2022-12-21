@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bc35348-dda2-4e4b-ac94-daaa1df4b4cd" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/FilePreview.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileUploader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/formInitial.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="6bc35348-dda2-4e4b-ac94-daaa1df4b4cd" name="Changes" comment="squash! initial commit">
+      <change afterPath="$PROJECT_DIR$/src/JsonModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileUploader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileUploader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormComponent.jsx" afterDir="false" />
     </list>
     <list id="8069de0d-19d0-4c2f-a1c4-64ae7b6c44fd" name="no commit" comment="">
       <change afterPath="$PROJECT_DIR$/src/UploadShort.jsx" afterDir="false" />
@@ -64,12 +62,31 @@
       <option name="presentableId" value="Default" />
       <updated>1671105694560</updated>
       <workItem from="1671105698431" duration="4026000" />
-      <workItem from="1671180132608" duration="13816000" />
+      <workItem from="1671180132608" duration="17547000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1671527345481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671527345481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />

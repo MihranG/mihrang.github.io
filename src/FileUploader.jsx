@@ -1,9 +1,14 @@
 import React, {useEffect, useState} from 'react';
+import styled from 'styled-components'
 import {Upload} from 'antd';
 import {InboxOutlined} from "@ant-design/icons";
 import FilePreview from "./FilePreview";
 
 const { Dragger } = Upload;
+
+const WrapperDivStyled = styled.div`
+  margin: 20px 5px;
+`
 
 const FileUploader = () => {
     const [fileList, setFileList] = useState([]);
@@ -16,7 +21,7 @@ const FileUploader = () => {
     const filePath = lastElement && URL.createObjectURL(lastElement.originFileObj)
 
     return (
-        <div>
+        <WrapperDivStyled>
             {lastElement && <FilePreview path={filePath} type={lastElement.type}/>}
             <Dragger
                 listType="picture"
@@ -33,7 +38,7 @@ const FileUploader = () => {
                 <p className="ant-upload-text">Click or drag file to this area to upload</p>
             </Dragger>
 
-        </div>
+        </WrapperDivStyled>
 
     );
 };

@@ -1,5 +1,7 @@
 import {Button, Form, Input} from "antd";
 import formInitial from './formInitial.json'
+import {useRef, useState} from "react";
+import JsonModal from "./JsonModal";
 
 const formItemLayout = {
     labelCol: {
@@ -12,10 +14,19 @@ const formItemLayout = {
     },
 };
 export const FormComponent = () =>{
-    const handleSubmit = (v) =>{
-        console.log('form', v)
+    const [isOpenModal, setIsOpenModal] = useState(false)
+    const [formData, setFormData] = useState(null)
+    const formRef = useRef(null)
+    const eraseForm = ()=>{
+        setFormData(null)
+        formRef.current.resetFields()
     }
-    return <Form {...formItemLayout} onFinish={handleSubmit}  name={'document'}>
+    const handleSubmit = (v) =>{
+        setFormData(v)
+        setIsOpenModal(true)
+    }
+    return <>
+        <Form {...formItemLayout} onFinish={handleSubmit}  name={'document'} ref={formRef}>
         {formInitial.fields.map(({label, name},idx)=>(
             <Form.Item label={label} key={idx} style={{margin: 5}}>
                 <Form.Item name={name}>
@@ -23,10 +34,14 @@ export const FormComponent = () =>{
                 </Form.Item>
             </Form.Item>
         ))}
-        <Form.Item>
+        <Form.Item >
             <Button type="primary" htmlType="submit">
-                Submit
+                Save
             </Button>
         </Form.Item>
     </Form>
+        {formData && <JsonModal json={formData} isOpen={isOpenModal} closeModal={() => setIsOpenModal(false)}
+                    eraseForm={eraseForm}/>}
+
+    </>
 }
